@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 public class App3GamingSpring {
 //
     @Bean
-    public GameRunner gameRunner(SuperContraGame game){
+    public GameRunner gameRunner(GamingConsole  game){
         var gameRunner = new GameRunner(game);
         return gameRunner;
 

@@ -1,13 +1,12 @@
 package com.basictest.building_mario.game;
 
 import com.basictest.building_mario.GamingConsole;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-
-@Component  //Spring will manage
-@Qualifier("SuperContraQualifier")
-public class SuperContraGame implements GamingConsole {
+@Component
+@Primary//Spring will manage
+public class MarioGame implements GamingConsole {
     public void up(){
         System.out.println("up");
     }
