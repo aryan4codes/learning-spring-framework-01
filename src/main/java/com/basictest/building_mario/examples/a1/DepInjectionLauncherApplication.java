@@ -38,8 +38,10 @@ class yourBuisnessClass{
 
     //3. Using constructors
 
-    @Autowired
+    @Autowired // no need even if not declared for constructor
     public yourBuisnessClass(Dependency1 dependency1, Dependency2 dependency2) {
+        super();
+        System.out.println("Inside constructor injection - Buisness Class");
         this.dependency1 = dependency1;
         this.dependency2 = dependency2;
     }
